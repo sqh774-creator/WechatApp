@@ -1,0 +1,20 @@
+<!--pages/students/students.wxml-->
+<view class="input-box">
+  <view class="input-container">
+    <input class="input-field" placeholder="请输入内容" bindinput="handleInput"></input>
+  </view>
+  <button class="query-button" bindtap="handleAjax">查询</button>
+</view>
+<view class="user-info">
+  <image class="page-image" wx:if="{{showImage}}" src="https://img95.699pic.com/xsj/15/i7/n2.jpg%21/fh/300"></image>
+  <view wx:if="{{responseData.stuid}}" class="id">学生编号：{{responseData.stuid}}</view>
+  <view wx:if="{{responseData.stuname}}" class="name">学生姓名：{{responseData.stuname}}</view>
+  <view wx:if="{{responseData.course}}" class="course" wx:for="{{responseData.course}}" wx:key="index">
+     <view class="course-title">所修课程：</view>
+     <view class="course-name">{{item.corname}}</view>
+</view>
+</view>
+
+
+
+

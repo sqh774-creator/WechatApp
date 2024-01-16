@@ -1,0 +1,14 @@
+<!--pages/modify/modify.wxml-->
+<view class="container">
+  <view>
+    <picker class="picker" bindchange="handlePickerChange" value="{{selectedValue}}" range="{{options}}">
+      <view class="picker-text">
+        {{options[selectedValue]}}
+      </view>
+    </picker>
+  </view>
+  <view class="input-container">
+    <input class="input" placeholder="请输入内容" bindinput="handleInputChange" />
+    <button class="btn-confirm" bindtap="handleConfirm">确定</button>
+  </view>
+</view>

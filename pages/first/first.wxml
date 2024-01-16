@@ -1,0 +1,9 @@
+<!--pages/first/first.wxml-->
+
+<image src="/asset/imgs/logo.png" class="center-image" alt="Logo"></image>
+<view class="button-container">
+  <button class="button" bindtap="goToHomePage">进入主页</button>
+</view>
+
+
+

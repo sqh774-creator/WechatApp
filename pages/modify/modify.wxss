@@ -1,0 +1,69 @@
+/* pages/modify/modify.wxss */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100rpx;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.picker {
+  margin-top: 140px;
+  display: flex;
+  align-items: center;
+  order: -1;
+  margin-right: 20rpx;
+  height: 40rpx;
+  border-radius: 4rpx;
+  text-align: center;
+  line-height: 100rpx;
+  white-space: nowrap;
+  align-items: center;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0 60rpx;
+}
+
+.input {
+  flex: 1;
+  height: 32px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4rpx;
+  padding: 0 10rpx;
+}
+.input-container {
+    display: flex;
+  }
+.btn-confirm {
+    flex: 0.3;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    background-color: #7dd18e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  .btn-container {
+    position: relative; /* 创建相对定位的参照容器 */
+    /* 其他样式属性根据需要设置 */
+  }
+  
+  .btn-reset {
+    position: absolute; /* 相对于父容器进行定位 */
+    top: -300px; /* 距离父容器顶部的距离 */
+    left: -70px; /* 距离父容器左侧的距离 */
+    background-color: rgb(255, 255, 255);
+    padding: 5px; /* 调整按钮的内边距以控制大小 */
+    color: #2d4e8a; /* 设置按钮文字颜色 */
+    border-radius: 10px; /* 设置按钮圆角 */
+    /* 其他样式属性根据需要设置 */
+  }
+  .picker-text{
+      margin-top: 300px;
+      background-color: rgb(244, 247, 241);
+      border-radius: 20px;
+  }

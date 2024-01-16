@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/students/students",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/modify/modify"
+   
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "欢迎您",
+    "navigationBarBackgroundColor": "#add8e6",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/students/students",
+        "text": "查询",
+        "iconPath": "images/搜搜.png",
+        "selectedIconPath": "images/nail.png"
+         },
+         {
+      "pagePath": "pages/modify/modify",
+      "text": "修改",
+      "iconPath": "images/查看，浏览.png",
+      "selectedIconPath": "/images/nail.png"
+         }]
+    },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
